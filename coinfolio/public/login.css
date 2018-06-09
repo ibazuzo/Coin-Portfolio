@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    background: #46bcec;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 .logoBig {
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input_field {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    box-shadow: inset 0px 2px 1px -1px rgba(0, 0, 0, 0.1);
+    padding: 12px 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.input_field::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.input_field:focus {
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.btn-light:hover {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-light {
+    padding: 12px;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-light {
+    margin-right: 15px;
+}
+
+.extra-actions a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.extra-actions a:hover {
+    opacity: 0.6;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CoinFolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="fonts/css/fontawesome-all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <img class="logo" src="http://via.placeholder.com/200x35">
+            <nav class="nav">
+                <span id="userName" class="userName"></span>
+                <a href="http://localhost/coinfolio/logout.php" class="logoutBtn"><i class="fas fa-sign-out-alt"></i></a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="widgetSection">
+            <div class="wrapper">
+                <div id="widgetLeft" class="widget">
+                    <img class="widget_media" src="/img/graph.jpg" alt="nu merge" />
+                </div>
+                <div id="widgetRight" class="widget">
+                    <div class="widget_title"></div>
+                    <div id="total_invested" class="widget_item widget_item_title">I invested</div>
+                    <div class="widget_item_content">0</div>
+                    <div id="total_value" class="widget_item widget_item_title">I have</div>
+                    <div class="widget_item_content">0</div>
+                    <div id="profit" class="widget_item widget_item_title">My Profit</div>
+                    <div class="widget_item_content">0</div>
+                </div>
+        </section>
+        <section id="newCoinSection">
+            <div class="wrapper">
+                <div>
+                    <button id="addNewCoinBtn" class="btn add_new_coin mobile_full_width">Add New Coin</button>
+                </div>
+            </div>
+        </section>
+        <section class="table_section">
+            <div class="wrapper">
+                <div id="coin_table" class="coin_table table">
+                    <div class="table_head">
+                        <div class="table_head_cell cell name">Currency</div>
+                        <div class="table_head_cell cell quantity">Qty</div>
+                        <div class="table_head_cell cell bought_date">Bought Date</div>
+                        <div class="table_head_cell cell bought_price">Bought Price</div>
+                        <div class="table_head_cell cell current_price">Current Price</div>
+                        <div class="table_head_cell cell total_value">Total Value</div>
+                        <div class="table_head_cell cell wallet_address">Wallet Address</div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <script src="/vendors/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

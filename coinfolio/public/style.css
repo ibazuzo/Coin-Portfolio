@@ -1,0 +1,484 @@
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {}
+
+.table_section {
+    background: #f9fafd;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #46bcec;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.btn {
+    box-sizing: border-box;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    background: #5cbcf6;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1, 1.05);
+}
+
+.header .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    color: #fff;
+}
+
+.nav .userName {
+    margin-right: 30px;
+}
+
+.logoutBtn i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.logoutBtn {
+    font-weight: 700;
+}
+
+/* WIDGET SECTION */
+
+#widgetSection .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#widgetLeft {
+    flex: 1;
+    border: 1px solid #aaa;
+    margin-right: 20px;
+}
+
+#widgetLeft widget_media {
+    width: 100%;
+}
+
+#widgetRight {
+    display: flex;
+    border: 1px solid #aaa;
+    width: 300px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget .widget_item_title {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.widget .widget_item_content {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.widget .widget_item_content:before {
+    content: "$";
+    color: #5cbcf6;
+    font-size: 30px;
+    margin-right: 3px;
+}
+
+.widget .widget_item_content:last-child {
+    margin-bottom: 0;
+}
+
+
+/* End of WIDGET SECTION */
+
+
+/* TABLE HEADER */
+
+.table .table_head {
+    text-transform: uppercase;
+    display: flex;
+    padding: 30px 22px 30px 30px;
+    font-weight: 700;
+    color: #255577;
+    font-size: 13px;
+}
+
+
+
+.table .table_head .btn {
+    width: 48px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+/* End of TABLE HEADER */
+
+
+/* ROW */
+
+.table .row {
+    display: flex;
+    padding: 10px 22px 10px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.table .row:last-child {
+    border-bottom: none;
+}
+
+.row_wrapper {
+    display: flex;
+    flex: 1;
+    color: #255577;
+    font-weight: 600;
+}
+
+
+
+.table .row:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.04);
+}
+
+.table .cell {
+    flex: 1;
+    text-align: center;
+    padding: 0 5px 0 0;
+    line-height: 32px;
+}
+
+.table .row .row_wrapper .btn {
+    flex: none;
+}
+
+
+/* ROW BUTTONS */
+
+.table .btn,
+#newCoinSection .wrapper .form .btn {
+    background: none;
+    padding: 0;
+    margin: 8px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.table .btn {
+    visibility: hidden;
+}
+
+.form .btn {
+    visibility: visible;
+}
+
+.table .row:hover .btn {
+    visibility: visible;
+}
+
+.fa-edit {
+    color: #46ceaf;
+}
+
+.fa-trash-alt {
+    color: #da0000;
+}
+
+.fa-save {
+    color: #0c8c1a;
+}
+
+.fa-ban {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.form button i + span {
+    display: none;
+}
+
+
+/* End of ROW BUTTONS */
+
+
+/* End of ROW */
+
+
+/* COLUMNS */
+
+.table .name {
+    text-align: left;
+    text-transform: uppercase;
+    flex: 0.5;
+}
+
+.table .bought_date {
+    color: #999;
+}
+
+.table .bought_price {
+    color: #999;
+}
+
+.table .row .current_price {
+    color: #46bcec;
+    font-weight: 400;
+}
+
+.table .row .total_value {
+    color: #46bcec;
+}
+
+.table .row .current_price:before,
+.table .row .total_value:before {
+    content: "$";
+}
+
+.table .wallet_address {
+    color: #999;
+}
+
+/* End of COLUMNS */
+
+.table .table_head_cell {
+    color: #255577;
+}
+
+
+
+.hide_btn {
+    display: none;
+}
+
+
+
+
+/* EDIT ENTRY INPUT FIELDS */
+
+.form {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form .form_field {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 0 0 5px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #255577;
+    margin-right: 10px;
+    width: inherit;
+    text-align: center;
+}
+
+.form .static {
+    background: none;
+    border: none;
+}
+
+.form input#coin_name {
+    text-transform: uppercase;
+    flex: 0.5;
+    text-align: left;
+}
+
+#newCoinSection .form input#coin_name {
+    text-align: center;
+}
+
+.form input::placeholder, input[type="date"]::before {
+    font-family: "Open Sans", sans-serif;
+    color: #aaa;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+input[type="date"]:before {
+	content: attr(placeholder);
+	width: 100%;
+}
+
+/* End of EDIT ENTRY */
+
+
+/* ADD NEW COIN SECTION */
+
+#addNewCoinBtn {
+    margin: 15px 0;
+}
+
+#newCoinSection .wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 30px 22px 30px 30px;
+}
+
+#newCoinSection .wrapper .form .form_field {
+    padding: 0 5px 0 5px;
+    margin-right: 10px;
+}
+
+#newCoinSection .wrapper .form .static {
+    display: none;
+}
+
+#newCoinSection .wrapper .form #wallet_address {
+    flex: 3;
+    margin: 0 20px 0 20px;
+}
+
+
+/* End of ADD NEW COIN SECTION */
+
+@media only screen and (max-width: 450px) {
+    #widgetSection .wrapper {
+    flex-direction: column;
+    
+}
+
+.widget {
+    border: none !important;
+}
+
+#widgetLeft {
+    margin: 0;
+}
+
+#widgetLeft img {
+    width: 100%;
+}
+
+#widgetRight {
+    margin: 40px auto 0;
+}
+
+.widget .widget_item_content {
+    font-size: 3rem;
+}
+
+.widget .widget_item_content:before {
+    font-size: 2.4rem;
+ }
+
+.widget .widget_item_title {
+    font-size: 1.5rem;
+}
+
+#newCoinSection .wrapper {
+    padding: 15px;
+}
+
+.form {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form .form_field, #newCoinSection .wrapper .form .form_field {
+    text-align: center !important;
+    line-height: 40px;
+    margin: 0 0 15px 0;
+}
+
+input[type="date"]::before {
+	margin-left: 28px;
+}
+
+#newCoinSection .wrapper .form #wallet_address {
+    margin: 0 0 10px 0;
+}
+
+.table .btn, #newCoinSection .wrapper .form .btn {
+    flex: 0.5;
+    background: #5cbcf6;
+    padding: 10px;
+    margin:  8px 0;
+}
+
+#addEntry i, #addEntry span {
+    color: #fff;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#cancel_btn {
+    background: #ccc !important;
+}
+
+#cancel_btn i, #cancel_btn span {
+    color: #fff;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.form button i + span {
+    display: inline;
+    margin-left: 10px;
+}
+
+.table .table_head {
+    display: none;
+}
+
+
+
+
+}
+
